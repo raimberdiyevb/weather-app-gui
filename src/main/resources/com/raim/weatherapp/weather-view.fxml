@@ -6,33 +6,31 @@
 <?import javafx.scene.text.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.raim.weatherapp.WeatherController">
-    <Button  onMouseClicked ="#searchButtonClicked" layoutX="325.0" layoutY="39.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="105.0">
+    <Button layoutX="325.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" prefHeight="55.0" prefWidth="105.0">
       <graphic>
-         <ImageView fx:id="searchButton" fitHeight="41.0" fitWidth="55.0"  pickOnBounds="true" preserveRatio="true">
+         <ImageView fx:id="searchButton" fitHeight="41.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@weatherapp_images/search.png" />
             </image>
          </ImageView>
       </graphic></Button>
-    <TextField layoutX="26.0" layoutY="39.0" prefHeight="55.0" prefWidth="268.0" promptText="Warsaw">
+    <TextField fx:id="searchTextField" layoutX="26.0" layoutY="39.0" prefHeight="55.0" prefWidth="268.0" promptText="Warsaw">
         <font>
             <Font name="Gill Sans MT" size="24.0" />
         </font>
     </TextField>
-    <Label layoutX="200.0" layoutY="357.0" text="20 C" textAlignment="CENTER">
+    <Label fx:id="temperatureLabel" layoutX="195.0" layoutY="357.0" text="20 C" textAlignment="CENTER">
         <font>
             <Font name="Gill Sans MT" size="25.0" />
         </font>
     </Label>
-    <ImageView fx:id="image3" fitHeight="63.0" fitWidth="76.0" layoutX="259.0" layoutY="537.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@weatherapp_images/windspeed.png"/>
+    <ImageView fx:id="windspeedImage" fitHeight="63.0" fitWidth="76.0" layoutX="259.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@weatherapp_images/windspeed.png" />
     </ImageView>
-    <ImageView fx:id="image2" fitHeight="63.0" fitWidth="76.0" layoutX="26.0" layoutY="535.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@weatherapp_images/humidity.png"/>
+    <ImageView fx:id="humidityImage" fitHeight="63.0" fitWidth="76.0" layoutX="26.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@weatherapp_images/humidity.png" />
     </ImageView>
-    <Label layoutX="195.0" layoutY="404.0" text="Sunny" textAlignment="CENTER">
+    <Label fx:id="weatherConditionLabel" layoutX="195.0" layoutY="404.0" text="Sunny" textAlignment="CENTER">
         <font>
             <Font name="Gill Sans MT" size="25.0" />
         </font>
@@ -42,7 +40,7 @@
             <Font name="Gill Sans MT" size="19.0" />
         </font>
     </Label>
-    <Label layoutX="110.0" layoutY="568.0" text="50%">
+    <Label fx:id="humidityLabel" layoutX="110.0" layoutY="568.0" text="50%">
         <font>
             <Font name="Gill Sans MT" size="25.0" />
         </font>
@@ -52,13 +50,12 @@
             <Font name="Gill Sans MT" size="19.0" />
         </font>
     </Label>
-    <Label layoutX="334.0" layoutY="566.0" text="10km/h">
+    <Label fx:id="windspeedLabel" layoutX="336.0" layoutY="568.0" text="10 km/h">
         <font>
             <Font name="Gill Sans MT" size="25.0" />
         </font>
     </Label>
-    <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="161.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@weatherapp_images/clear.png"/>
+    <ImageView fx:id="weatherConditionImage" fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@weatherapp_images/clear.png" />
     </ImageView>
 </Pane>
