@@ -4,9 +4,9 @@
 ## Table of Contents
 - [Features](#features)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Run Locally](#run-locally)
+- [Contact](#contact)
+- [Project Status](#project-status)
 ## Features
 * real-time weather data
 * displayed info (metric):
@@ -21,29 +21,43 @@
   Make sure you have the necessary JavaFX libraries or dependencies configured to run the application.
 * [JSON.simple](https://code.google.com/archive/p/json-simple/) : Your code imports org.json.simple.JSONObject and uses it to parse JSON data.
   You need to include the JSON.simple library in your project to handle JSON data.
-## Usage
-
-[Provide instructions on how to use your project. Include code examples, screenshots, or any other information that helps users understand how to interact with your project.]
-
-## Contributing
-
-[Explain how others can contribute to your project. Include guidelines for submitting pull requests, reporting issues, and any coding standards you follow.]
-
-## License
-
-[Include information about the project's license. For example, "This project is licensed under the [License Name] license." If you're using an open-source license, consider providing a link to the license file.]
-
+* [Weather Forecast API](https://open-meteo.com/en/docs#latitude=33.767&longitude=-118.1892) : Specify the API used to fetch latitude and longitude data.
+* [Geolocation API](https://open-meteo.com/en/docs/geocoding-api) : Specify the weather API used for retrieving weather data.
+  Provide any necessary links or references to these APIs.
+## Run Locally
+* Clone the project
+```bash
+  git clone https://github.com/raimberdiyevb/weather-app-gui.git
+```
+* Navigate to Project Directory
+```bash
+  cd path_to_your_project_directory
+```
+* Build Maven Project:
+  
+for windows
+```bash
+  mvnw clean install
+```
+for linux/macOS
+```bash
+  mvn clean install
+```
+* Execute the Application
+  ```bash
+  mvn exec:java -Dexec.mainClass="com.raim.weatherapp.WeatherApplication"
+  ```
+* Ensure that Maven is installed on your system and configured correctly.
+     Additionally, make sure the necessary dependencies, including JavaFX, are correctly specified
+     in your Maven project's pom.xml file for the project to build and execute successfully.
+     Adjust the commands and parameters based on your project's structure and requirements.
 ## Contact
-
-[Provide your contact information or a way for users to reach out to you if they have questions or feedback.]
-
-## Acknowledgments
-
-[If your project is built using third-party libraries, services, or tools, acknowledge and give credit to them. Include any necessary attributions.]
-
+ Feel free to reach out to me!
+ Email : bekbolsun.raim@gmail.com
+ WhatsApp : +48780765435
+ LinkedIn : www.linkedin.com/in/raimberdiyev
 ## Project Status
-
-[Indicate the current status of your project. Is it actively maintained? Is it a one-time project?]
-
-[Optional: You can also include badges, such as build status or version number, to provide quick information about your project.]
-
+it is a **Kickoff Version**
+This project is a labor of love, and I am committed to its continuous development and improvement.
+Future updates and enhancements are in the pipeline. I'm committed to expanding the project's features and functionalities.
+I value feedback and input. I'm open to suggestions and eager to engage with the community for the project's growth.
